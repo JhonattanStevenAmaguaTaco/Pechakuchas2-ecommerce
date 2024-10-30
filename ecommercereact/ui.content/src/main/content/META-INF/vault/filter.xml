@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/ecommercereact" mode="merge"/>
+    <filter root="/content/ecommercereact" mode="merge"/>
+    <filter root="/content/dam/ecommercereact" mode="merge">
+        <exclude pattern="/content/dam/ecommercereact(/.*)?"/>
+        <include pattern="/content/dam/ecommercereact/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/ecommercereact/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/ecommercereact" mode="merge"/>
+</workspaceFilter>

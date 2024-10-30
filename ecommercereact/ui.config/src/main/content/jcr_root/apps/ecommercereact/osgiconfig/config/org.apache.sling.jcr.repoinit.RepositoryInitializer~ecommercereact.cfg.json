@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/ecommercereact",
+        "create path (nt:unstructured) /content/dam/ecommercereact/jcr:content",
+        "set properties on /content/dam/ecommercereact/jcr:content\n  set cq:conf{String} to /conf/ecommercereact\n  set jcr:title{String} to \"E Commerce React\"\nend"
+    ]
+}

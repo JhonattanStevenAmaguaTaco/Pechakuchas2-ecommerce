@@ -1,0 +1,42 @@
+/* CustomHeader.css */
+
+.custom-header {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; /* Aseguramos que el texto sea blanco */
+    z-index: 2;
+    margin: 0;
+}
+
+.header-title a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejorar legibilidad */
+    border-radius: 8px;
+}

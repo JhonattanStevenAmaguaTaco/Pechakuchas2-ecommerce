@@ -1,0 +1,42 @@
+/* CodeViewer.css */
+
+.code-viewer {
+    position: relative;
+    background-color: #2e3440; /* Fondo oscuro */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #d8dee9; /* Color de texto claro */
+}
+
+/* Simulación de los "botones" de una terminal */
+.code-viewer::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    gap: 8px;
+}
+
+.code-viewer::before > div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff5f57; /* Rojo */
+}
+
+.code-viewer::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    top: 8px;
+    left: 12px;
+}
+
+.code-viewer::before > div:nth-child(1) { background-color: #ff5f57; } /* Rojo */
+.code-viewer::before > div:nth-child(2) { background-color: #ffbd2e; } /* Amarillo */
+.code-viewer::before > div:nth-child(3) { background-color: #28c840; } /* Verde */
